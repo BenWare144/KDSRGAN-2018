@@ -1,7 +1,8 @@
-## This code is a modificaiton from the code of this repository 
-[SRGAN](https://github.com/tensorlayer/srgan) which will soon be moved into [here](https://github.com/tensorlayer/tensorlayer/tree/master/examples)
+## KDSRGAN
+An application of knowledge distillation in GAN SuperResolution
+This code is a modificaiton from the code of this repository [SRGAN](https://github.com/tensorlayer/srgan) which will soon be moved into [here](https://github.com/tensorlayer/tensorlayer/tree/master/examples)
 
-this is an implimentation of the sargan network
+this is an implimentation of the SRGAN network
 ### SRGAN Architecture
 TensorFlow Implementation of ["Photo-Realistic Single Image Super-Resolution Using a Generative Adversarial Network"](https://arxiv.org/abs/1609.04802)
 
@@ -16,14 +17,9 @@ download both HR and a set of LR images, I trained using the unknown downscaling
 Set your image folder in `config.py`, Most of the options are there.
 
 
-trains a network without knowledge distilation python main.py
+-train a network without knowledge distillation
 ```bash
-python main.py
-```
-
-- Trains model with knowledge distribution.
-```bash
-python main.py --mode=evaluate 
+python train_distill.py
 ```
 
 - Start evaluation.
@@ -37,10 +33,6 @@ python main.py --mode=evaluate
 python main.py
 ```
 
-
-
-
-
 ### Reference
 * [1] [Photo-Realistic Single Image Super-Resolution Using a Generative Adversarial Network](https://arxiv.org/abs/1609.04802)
 
@@ -49,4 +41,4 @@ python main.py
 
 ### License
 - For academic and non-commercial use only.
-- For commercial use, please contact tensorlayer@gmail.com.
+- For commercial use, please contact bwarex@gmail.com.
