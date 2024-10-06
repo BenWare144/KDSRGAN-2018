@@ -6,10 +6,11 @@ This code uses an implimentation of the SRGAN network, modified from the code of
 ### SRGAN Architecture
 TensorFlow Implementation of ["Photo-Realistic Single Image Super-Resolution Using a Generative Adversarial Network"](https://arxiv.org/abs/1609.04802)
 
-Downloaded pretrained VGG layer[here](https://mega.nz/#!xZ8glS6J!MAnE91ND_WyfZ_8mvkuSa2YcA7q-1ehfSm-Q1fxOvvs).
+Downloaded pretrained VGG layer [here](https://mega.nz/#!xZ8glS6J!MAnE91ND_WyfZ_8mvkuSa2YcA7q-1ehfSm-Q1fxOvvs).
 
 Download both HR and a set of LR images of this datset:
 [DIV2K - bicubic downscaling x4 competition](http://www.vision.ee.ethz.ch/ntire17/) 
+
 This code uses the "unknown downscaling x4".
 
 
